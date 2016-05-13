@@ -1,0 +1,84 @@
+{
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "scriptPreprocessor": "<rootDir>/Scripts/__tests__/preprocessor.js",
+    "testFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/jspm_packages",
+      "preprocessor.js"
+    ],
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/*",
+      "<rootDir>/jspm_packages/*"
+    ],
+    "verbose": true
+  },
+  "name": "bossk",
+  "version": "0.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "event-stream": "^3.3.2",
+    "gulp": "~3.9.1",
+    "gulp-batch": "1.0.5",
+    "gulp-cached": "^1.1.0",
+    "gulp-concat": "2.5.2",
+    "gulp-cssmin": "0.1.7",
+    "gulp-debug": "2.1.2",
+    "gulp-install": "^0.6.0",
+    "gulp-jspm-build": "0.0.13",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-typescript": "2.13.0",
+    "gulp-uglify": "1.2.0",
+    "gulp-watch": "4.3.5",
+    "jest-cli": "^0.8.2",
+    "jspm": "^0.16.19",
+    "object-assign": "^4.0.1",
+    "rimraf": "2.2.8",
+    "yargs": "^3.32.0"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "wwwroot"
+    },
+    "dependencies": {
+      "bootstrap": "github:twbs/bootstrap@^3.3.6",
+      "classnames": "npm:classnames@^2.2.3",
+      "core-js": "npm:core-js@^2.1.0",
+      "jquery": "npm:jquery@^2.1.4",
+      "lodash": "npm:lodash@^4.3.0",
+      "moment": "npm:moment@^2.11.1",
+      "moment-timezone": "npm:moment-timezone@^0.5.3",
+      "react": "npm:react@^0.14.6",
+      "react-bootstrap": "npm:react-bootstrap@^0.28.3",
+      "react-bootstrap-datetimepicker": "npm:react-bootstrap-datetimepicker@^0.0.22",
+      "react-datepicker": "npm:react-datepicker@^0.23.2",
+      "react-dom": "npm:react-dom@^0.14.7",
+      "react-modal": "npm:react-modal@^0.6.1",
+      "react-redux": "npm:react-redux@^4.0.6",
+      "react-router": "npm:react-router@^2.4.0",
+      "redux": "npm:redux@^3.0.6",
+      "redux-actions": "npm:redux-actions@^0.9.1",
+      "redux-thunk": "npm:redux-thunk@^1.0.3",
+      "toastr": "github:CodeSeven/toastr@^2.1.2",
+      "validator": "npm:validator@^4.8.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24"
+    }
+  },
+  "scripts": {
+    "test": "jest",
+    "postinstall": "jspm install"
+  }
+}
